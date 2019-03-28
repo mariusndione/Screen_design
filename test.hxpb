@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<xml>
+<Project Version ="1.3">
+  <Driver Name="VPD-133" Orientation="Landscape" />
+
+  <Files>
+    <File Name="test.hwd" />
+  </Files>
+
+  <Program>
+    <Logic Type="" Name="test.ldx" />
+  </Program>
+
+  <Connections>
+  </Connections>
+
+  <Devices>
+  </Devices>
+
+  <Virtual>
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="One" Default="0" Binding="" Comment="" />
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="NextF" Default="1" Binding="" Comment="" />
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="tmp" Default="0" Binding="" Comment="" />
+  </Virtual>
+
+  <Configuration>
+    <WatchDog Timeout="0" ClearTime="0" MTCPTimeout="60000" />
+    <Startup LED="True" Beep="False" Delay="100" />
+    <LCD AutoOff="0" OnBeep="False" OfBeep="False" Brightness="180" />
+    <UserPictures Folder="[Pictures]"/>
+    <Beep Touch="False" TCPTimeout="False" />
+    <ConfigBeep BeepFreq="800" BeepDuration="25" />
+    <Language Support="English" />
+    <Download Checksum="False" />
+    <Refresh Time="100" ConnectingBlinkCycle="100" ReconnectionInterval="50" />
+    <Ladder Version="1" />
+    <Device NickName="ICPDAS" />
+    <NTP Enable="False" FREQ="15" ZONE="10,00" ADDR="time.stdtime.gov.tw" />
+    <UserFlash Size="0" />
+    <Warning MultiSlave="0" />
+  </Configuration>
+</Project>
+</xml>
+
+<!-- Information>
+  Tool Name="HMIWorks STD v2.10.40 (Dec.25, 2018)" 
+  Project Path="C:\ICPDAS\HMIWorks_Standard\Projects\test\" 
+  Backup Enable="True", IsCurrent="True"
+  Backup OutputDir="C:\ICPDAS\HMIWorks_Standard\Projects_Backup"
+  Backup InputDirs="C:\ICPDAS\HMIWorks_Standard\Projects"
+  OS Version="64-bit Windows 10 Enterprise (Build 17134)" 
+  CPU Model="Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz" 
+-->

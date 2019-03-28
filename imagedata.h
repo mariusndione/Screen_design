@@ -1,0 +1,25 @@
+
+extern const unsigned char pucImage_Picture10[92857];
+extern const unsigned char pucImage_OK37[611];
+extern const unsigned char pucImagePress_OK37[611];
+extern const unsigned char pucImage_Etalonnage138[2613];
+extern const unsigned char pucImagePress_Etalonnage138[2604];
+extern const unsigned char ObjectList53_50x30_0_pucImage_Group6[3005];
+extern const unsigned char ObjectList65_55x33_0_pucImage_Group40[3635];
+extern const unsigned char ObjectList66_50x30_0_pucImage_Group6[3005];
+extern const unsigned char ObjectList161_36x27_0_pucImage_Group6[1949];
+extern const unsigned char ObjectList72_50x30_0_pucImage_Group6[3005];
+extern const unsigned char pucImage_Valider111[842];
+extern const unsigned char pucImagePress_Valider111[842];
+extern const unsigned char ObjectList60_45x31_0_pucImage_Group6[2795];
+extern const unsigned char ObjectList155_50x30_0_pucImage_Group6[3005];
+extern const unsigned char ObjectList155_44x33_0_pucImage_Group6[2909];
+extern const unsigned char pucImage_ConfigM113[1416];
+extern const unsigned char pucImagePress_ConfigM113[1412];
+extern const unsigned char pucImage_ConfigE115[1383];
+extern const unsigned char pucImagePress_ConfigE115[1379];
+extern const unsigned char pucImage_ConfigS116[1277];
+extern const unsigned char pucImagePress_ConfigS116[1281];
+extern const unsigned char pucImage_ConfigC117[1414];
+extern const unsigned char pucImagePress_ConfigC117[1410];
+extern const unsigned char pucImage_Picture114[16352];
