@@ -146,8 +146,8 @@ void Module6OnClick(tWidget *pWidget)
 
 void ConfigModule29OnShow()
 {
-   static char tab[5];
-   char iVal[5];
+   static char tab[10];
+   char iVal[10];
    memset(iVal, '\0', sizeof(iVal));
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       hmi_UserFlashReadEx(adresseAdresse, 0, 4, (char *)&iVal);
@@ -157,7 +157,7 @@ void ConfigModule29OnShow()
       WidgetPaint((tWidget*)&Adresse41);
    }
 
-   static char tabM[5];
+   static char tabM[10];
    float iValM=0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       hmi_UserFlashReadEx(adresseModule, 0, 4, (char *)&iValM);
@@ -220,5 +220,10 @@ void ConfigModule29OnDestroy()
 {
 
 }
+void Quit129OnClick(tWidget *pWidget)
+{
+   hmi_GotoFrameByName("Affichage");
+}
 #endif
+
 

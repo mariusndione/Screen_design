@@ -12,74 +12,6 @@ extern void hmi_IOScan_Process(void);
 
 extern tTimerWidget Timer137;
 extern void hmi_OnTimer137Execute(tWidget *pWidget);
-extern tCanvasWidget Label15;
-extern tPushButtonWidget Sept16;
-extern void _OnSept16Paint(tWidget *, unsigned long);
-extern void hmi_OnSept16Click(tWidget *pWidget);
-extern void hmi_OnSept16Release(tWidget *pWidget);
-
-extern tPushButtonWidget Huit17;
-extern void _OnHuit17Paint(tWidget *, unsigned long);
-extern void hmi_OnHuit17Click(tWidget *pWidget);
-extern void hmi_OnHuit17Release(tWidget *pWidget);
-
-extern tPushButtonWidget Neuf18;
-extern void _OnNeuf18Paint(tWidget *, unsigned long);
-extern void hmi_OnNeuf18Click(tWidget *pWidget);
-extern void hmi_OnNeuf18Release(tWidget *pWidget);
-
-extern tPushButtonWidget Quatre19;
-extern void _OnQuatre19Paint(tWidget *, unsigned long);
-extern void hmi_OnQuatre19Click(tWidget *pWidget);
-extern void hmi_OnQuatre19Release(tWidget *pWidget);
-
-extern tPushButtonWidget Cinq20;
-extern void _OnCinq20Paint(tWidget *, unsigned long);
-extern void hmi_OnCinq20Click(tWidget *pWidget);
-extern void hmi_OnCinq20Release(tWidget *pWidget);
-
-extern tPushButtonWidget Six21;
-extern void _OnSix21Paint(tWidget *, unsigned long);
-extern void hmi_OnSix21Click(tWidget *pWidget);
-extern void hmi_OnSix21Release(tWidget *pWidget);
-
-extern tPushButtonWidget Un22;
-extern void _OnUn22Paint(tWidget *, unsigned long);
-extern void hmi_OnUn22Click(tWidget *pWidget);
-extern void hmi_OnUn22Release(tWidget *pWidget);
-
-extern tPushButtonWidget Deux23;
-extern void _OnDeux23Paint(tWidget *, unsigned long);
-extern void hmi_OnDeux23Click(tWidget *pWidget);
-extern void hmi_OnDeux23Release(tWidget *pWidget);
-
-extern tPushButtonWidget Trois24;
-extern void _OnTrois24Paint(tWidget *, unsigned long);
-extern void hmi_OnTrois24Click(tWidget *pWidget);
-extern void hmi_OnTrois24Release(tWidget *pWidget);
-
-extern tPushButtonWidget Zero25;
-extern void _OnZero25Paint(tWidget *, unsigned long);
-extern void hmi_OnZero25Click(tWidget *pWidget);
-extern void hmi_OnZero25Release(tWidget *pWidget);
-
-extern tPushButtonWidget Point27;
-extern void _OnPoint27Paint(tWidget *, unsigned long);
-extern void hmi_OnPoint27Click(tWidget *pWidget);
-extern void hmi_OnPoint27Release(tWidget *pWidget);
-
-extern tPushButtonWidget Entrer26;
-extern void _OnEntrer26Paint(tWidget *, unsigned long);
-extern void hmi_OnEntrer26Click(tWidget *pWidget);
-extern void hmi_OnEntrer26Release(tWidget *pWidget);
-
-extern tPushButtonWidget Supprime28;
-extern void _OnSupprime28Paint(tWidget *, unsigned long);
-extern void hmi_OnSupprime28Click(tWidget *pWidget);
-extern void hmi_OnSupprime28Release(tWidget *pWidget);
-
-extern tTimerWidget Timer132;
-extern void hmi_OnTimer132Execute(tWidget *pWidget);
 extern tPushButtonWidget OK37;
 extern void hmi_OnOK37Click(tWidget *pWidget);
 extern void hmi_OnOK37Release(tWidget *pWidget);
@@ -110,6 +42,11 @@ extern void _OnTextPushButton46Paint(tWidget *, unsigned long);
 extern void hmi_OnTextPushButton46Click(tWidget *pWidget);
 extern void hmi_OnTextPushButton46Release(tWidget *pWidget);
 
+extern tPushButtonWidget Quit129;
+extern void _OnQuit129Paint(tWidget *, unsigned long);
+extern void hmi_OnQuit129Click(tWidget *pWidget);
+extern void hmi_OnQuit129Release(tWidget *pWidget);
+
 extern tPushButtonWidget ZeroCapteur12;
 extern void _OnZeroCapteur12Paint(tWidget *, unsigned long);
 extern void hmi_OnZeroCapteur12Click(tWidget *pWidget);
@@ -139,11 +76,40 @@ extern void _OnUnite35Paint(tWidget *, unsigned long);
 extern void hmi_OnUnite35Click(tWidget *pWidget);
 extern void hmi_OnUnite35Release(tWidget *pWidget);
 
-extern tCanvasWidget Label62;
-extern tPushButtonWidget CoefEtalonnage63;
-extern void _OnCoefEtalonnage63Paint(tWidget *, unsigned long);
-extern void hmi_OnCoefEtalonnage63Click(tWidget *pWidget);
-extern void hmi_OnCoefEtalonnage63Release(tWidget *pWidget);
+extern tPushButtonWidget Quit128;
+extern void _OnQuit128Paint(tWidget *, unsigned long);
+extern void hmi_OnQuit128Click(tWidget *pWidget);
+extern void hmi_OnQuit128Release(tWidget *pWidget);
+
+extern tCanvasWidget Label144;
+extern tCanvasWidget Label145;
+extern tPushButtonWidget ValPhysique148;
+extern void _OnValPhysique148Paint(tWidget *, unsigned long);
+extern void hmi_OnValPhysique148Click(tWidget *pWidget);
+extern void hmi_OnValPhysique148Release(tWidget *pWidget);
+
+extern tCanvasWidget Label151;
+extern tTimerWidget Timer154;
+extern void hmi_OnTimer154Execute(tWidget *pWidget);
+extern tPushButtonWidget TextPushButton121;
+extern void _OnTextPushButton121Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton121Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton121Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton149;
+extern void _OnTextPushButton149Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton149Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton149Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton150;
+extern void _OnTextPushButton150Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton150Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton150Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton152;
+extern void _OnTextPushButton152Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton152Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton152Release(tWidget *pWidget);
 
 extern tPushButtonWidget TextPushButton136;
 extern void _OnTextPushButton136Paint(tWidget *, unsigned long);
@@ -159,6 +125,34 @@ extern tPushButtonWidget TextPushButton163;
 extern void _OnTextPushButton163Paint(tWidget *, unsigned long);
 extern void hmi_OnTextPushButton163Click(tWidget *pWidget);
 extern void hmi_OnTextPushButton163Release(tWidget *pWidget);
+
+extern tPushButtonWidget Quit127;
+extern void _OnQuit127Paint(tWidget *, unsigned long);
+extern void hmi_OnQuit127Click(tWidget *pWidget);
+extern void hmi_OnQuit127Release(tWidget *pWidget);
+
+extern tCanvasWidget Label62;
+extern tPushButtonWidget ValPhysique157;
+extern void _OnValPhysique157Paint(tWidget *, unsigned long);
+extern void hmi_OnValPhysique157Click(tWidget *pWidget);
+extern void hmi_OnValPhysique157Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton158;
+extern void _OnTextPushButton158Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton158Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton158Release(tWidget *pWidget);
+
+extern tCanvasWidget Label168;
+extern tCanvasWidget Label169;
+extern tPushButtonWidget ValReelle63;
+extern void _OnValReelle63Paint(tWidget *, unsigned long);
+extern void hmi_OnValReelle63Click(tWidget *pWidget);
+extern void hmi_OnValReelle63Release(tWidget *pWidget);
+
+extern tPushButtonWidget erreur122;
+extern void _Onerreur122Paint(tWidget *, unsigned long);
+extern void hmi_Onerreur122Click(tWidget *pWidget);
+extern void hmi_Onerreur122Release(tWidget *pWidget);
 
 extern tPushButtonWidget TextPushButton71;
 extern void _OnTextPushButton71Paint(tWidget *, unsigned long);
@@ -236,6 +230,28 @@ extern void _OnS1Valeur74Paint(tWidget *, unsigned long);
 extern void hmi_OnS1Valeur74Click(tWidget *pWidget);
 extern void hmi_OnS1Valeur74Release(tWidget *pWidget);
 
+extern tPushButtonWidget Quit125;
+extern void _OnQuit125Paint(tWidget *, unsigned long);
+extern void hmi_OnQuit125Click(tWidget *pWidget);
+extern void hmi_OnQuit125Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton173;
+extern void _OnTextPushButton173Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton173Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton173Release(tWidget *pWidget);
+
+extern tPushButtonWidget TextPushButton174;
+extern void _OnTextPushButton174Paint(tWidget *, unsigned long);
+extern void hmi_OnTextPushButton174Click(tWidget *pWidget);
+extern void hmi_OnTextPushButton174Release(tWidget *pWidget);
+
+extern tTimerWidget Timer175;
+extern void hmi_OnTimer175Execute(tWidget *pWidget);
+extern tPushButtonWidget Quitter176;
+extern void _OnQuitter176Paint(tWidget *, unsigned long);
+extern void hmi_OnQuitter176Click(tWidget *pWidget);
+extern void hmi_OnQuitter176Release(tWidget *pWidget);
+
 extern tCheckBoxWidget NO102;
 extern void hmi_OnNO102CheckChange(tWidget *pWidget, unsigned long bSelected);
 
@@ -281,6 +297,11 @@ extern tPushButtonWidget Valider111;
 extern void hmi_OnValider111Click(tWidget *pWidget);
 extern void hmi_OnValider111Release(tWidget *pWidget);
 
+extern tPushButtonWidget Quit126;
+extern void _OnQuit126Paint(tWidget *, unsigned long);
+extern void hmi_OnQuit126Click(tWidget *pWidget);
+extern void hmi_OnQuit126Release(tWidget *pWidget);
+
 extern tPushButtonWidget ConfigM113;
 extern void hmi_OnConfigM113Click(tWidget *pWidget);
 extern void hmi_OnConfigM113Release(tWidget *pWidget);
@@ -297,8 +318,18 @@ extern tPushButtonWidget ConfigC117;
 extern void hmi_OnConfigC117Click(tWidget *pWidget);
 extern void hmi_OnConfigC117Release(tWidget *pWidget);
 
-extern tCanvasWidget Label118;
-extern tCanvasWidget Label119;
+extern tTimerWidget Timer179;
+extern void hmi_OnTimer179Execute(tWidget *pWidget);
+extern tPushButtonWidget Mesure118;
+extern void _OnMesure118Paint(tWidget *, unsigned long);
+extern void hmi_OnMesure118Click(tWidget *pWidget);
+extern void hmi_OnMesure118Release(tWidget *pWidget);
+
+extern tPushButtonWidget UniM119;
+extern void _OnUniM119Paint(tWidget *, unsigned long);
+extern void hmi_OnUniM119Click(tWidget *pWidget);
+extern void hmi_OnUniM119Release(tWidget *pWidget);
+
 extern tCanvasWidget Label223;
 extern tPushButtonWidget TextPushButton224;
 extern void _OnTextPushButton224Paint(tWidget *, unsigned long);
@@ -497,33 +528,97 @@ extern void hmi_OnTextPushButton265Release(tWidget *pWidget);
 
 extern tTimerWidget Timer292;
 extern void hmi_OnTimer292Execute(tWidget *pWidget);
-extern tCanvasWidget Label121;
-extern tPushButtonWidget TextPushButton122;
-extern void _OnTextPushButton122Paint(tWidget *, unsigned long);
-extern void hmi_OnTextPushButton122Click(tWidget *pWidget);
-extern void hmi_OnTextPushButton122Release(tWidget *pWidget);
+extern tCanvasWidget Label15;
+extern tPushButtonWidget Sept16;
+extern void _OnSept16Paint(tWidget *, unsigned long);
+extern void hmi_OnSept16Click(tWidget *pWidget);
+extern void hmi_OnSept16Release(tWidget *pWidget);
 
+extern tPushButtonWidget Huit17;
+extern void _OnHuit17Paint(tWidget *, unsigned long);
+extern void hmi_OnHuit17Click(tWidget *pWidget);
+extern void hmi_OnHuit17Release(tWidget *pWidget);
+
+extern tPushButtonWidget Neuf18;
+extern void _OnNeuf18Paint(tWidget *, unsigned long);
+extern void hmi_OnNeuf18Click(tWidget *pWidget);
+extern void hmi_OnNeuf18Release(tWidget *pWidget);
+
+extern tPushButtonWidget Quatre19;
+extern void _OnQuatre19Paint(tWidget *, unsigned long);
+extern void hmi_OnQuatre19Click(tWidget *pWidget);
+extern void hmi_OnQuatre19Release(tWidget *pWidget);
+
+extern tPushButtonWidget Cinq20;
+extern void _OnCinq20Paint(tWidget *, unsigned long);
+extern void hmi_OnCinq20Click(tWidget *pWidget);
+extern void hmi_OnCinq20Release(tWidget *pWidget);
+
+extern tPushButtonWidget Six21;
+extern void _OnSix21Paint(tWidget *, unsigned long);
+extern void hmi_OnSix21Click(tWidget *pWidget);
+extern void hmi_OnSix21Release(tWidget *pWidget);
+
+extern tPushButtonWidget Un22;
+extern void _OnUn22Paint(tWidget *, unsigned long);
+extern void hmi_OnUn22Click(tWidget *pWidget);
+extern void hmi_OnUn22Release(tWidget *pWidget);
+
+extern tPushButtonWidget Deux23;
+extern void _OnDeux23Paint(tWidget *, unsigned long);
+extern void hmi_OnDeux23Click(tWidget *pWidget);
+extern void hmi_OnDeux23Release(tWidget *pWidget);
+
+extern tPushButtonWidget Trois24;
+extern void _OnTrois24Paint(tWidget *, unsigned long);
+extern void hmi_OnTrois24Click(tWidget *pWidget);
+extern void hmi_OnTrois24Release(tWidget *pWidget);
+
+extern tPushButtonWidget Zero25;
+extern void _OnZero25Paint(tWidget *, unsigned long);
+extern void hmi_OnZero25Click(tWidget *pWidget);
+extern void hmi_OnZero25Release(tWidget *pWidget);
+
+extern tPushButtonWidget Point27;
+extern void _OnPoint27Paint(tWidget *, unsigned long);
+extern void hmi_OnPoint27Click(tWidget *pWidget);
+extern void hmi_OnPoint27Release(tWidget *pWidget);
+
+extern tPushButtonWidget Entrer26;
+extern void _OnEntrer26Paint(tWidget *, unsigned long);
+extern void hmi_OnEntrer26Click(tWidget *pWidget);
+extern void hmi_OnEntrer26Release(tWidget *pWidget);
+
+extern tPushButtonWidget Supprime28;
+extern void _OnSupprime28Paint(tWidget *, unsigned long);
+extern void hmi_OnSupprime28Click(tWidget *pWidget);
+extern void hmi_OnSupprime28Release(tWidget *pWidget);
+
+extern tTimerWidget Timer132;
+extern void hmi_OnTimer132Execute(tWidget *pWidget);
 extern void Ondemarrage2Paint(tWidget *pWidget, tContext *pContext);
-extern void OnPavetNum14Paint(tWidget *pWidget, tContext *pContext);
 extern void OnConfigModule29Paint(tWidget *pWidget, tContext *pContext);
 extern void OnConfigCapteur7Paint(tWidget *pWidget, tContext *pContext);
+extern void OnAlerte120Paint(tWidget *pWidget, tContext *pContext);
 extern void OnEtalonnage134Paint(tWidget *pWidget, tContext *pContext);
 extern void OnSeuillage45Paint(tWidget *pWidget, tContext *pContext);
+extern void OnMsgErreur172Paint(tWidget *pWidget, tContext *pContext);
 extern void OnSeuilUn95Paint(tWidget *pWidget, tContext *pContext);
 extern void OnAffichage112Paint(tWidget *pWidget, tContext *pContext);
 extern void OnClavier44Paint(tWidget *pWidget, tContext *pContext);
-extern void OnAlerte120Paint(tWidget *pWidget, tContext *pContext);
+extern void OnPavetNum14Paint(tWidget *pWidget, tContext *pContext);
 
 extern tCanvasWidget Canvasdemarrage;
-extern tCanvasWidget CanvasPavetNum;
 extern tCanvasWidget CanvasConfigModule;
 extern tCanvasWidget CanvasConfigCapteur;
+extern tCanvasWidget CanvasAlerte;
 extern tCanvasWidget CanvasEtalonnage;
 extern tCanvasWidget CanvasSeuillage;
+extern tCanvasWidget CanvasMsgErreur;
 extern tCanvasWidget CanvasSeuilUn;
 extern tCanvasWidget CanvasAffichage;
 extern tCanvasWidget CanvasClavier;
-extern tCanvasWidget CanvasAlerte;
+extern tCanvasWidget CanvasPavetNum;
 
 extern void hmi_FreeFrameWidgets1();
 extern void hmi_FreeFrameWidgets2();
@@ -535,17 +630,19 @@ extern void hmi_FreeFrameWidgets7();
 extern void hmi_FreeFrameWidgets8();
 extern void hmi_FreeFrameWidgets9();
 extern void hmi_FreeFrameWidgets10();
+extern void hmi_FreeFrameWidgets11();
 
 
 extern void hmi_demarrage();
-extern void hmi_PavetNum();
 extern void hmi_ConfigModule();
 extern void hmi_ConfigCapteur();
+extern void hmi_Alerte();
 extern void hmi_Etalonnage();
 extern void hmi_Seuillage();
+extern void hmi_MsgErreur();
 extern void hmi_SeuilUn();
 extern void hmi_Affichage();
 extern void hmi_Clavier();
-extern void hmi_Alerte();
+extern void hmi_PavetNum();
 
 #endif

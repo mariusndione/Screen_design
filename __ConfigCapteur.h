@@ -18,8 +18,9 @@ int adresseCapteur=6;
 int adresseMaxCapteur=7;
 int adresseVoie=8;
 int adresseUnite=9;
-
-
+int adresseValP=10;
+int adresseCoefEtal=14;
+extern int adresseTypeCapteur;
 void ZeroCapteur12OnClick(tWidget *pWidget)
 {
       VAR_SET(NextF,NUM_FRAME);
@@ -49,10 +50,18 @@ void Unite35OnClick(tWidget *pWidget)
       hmi_GotoFrameByName("Clavier");
 }
 
+void ValPhysique148OnClick(tWidget *pWidget)
+{
+      VAR_SET(NextF,NUM_FRAME);
+      VAR_SET(One,adresseValP);
+      hmi_GotoFrameByName("PavetNum");
+}
+
+
 void ConfigCapteur7OnShow()
 {
    ////////////////////////////////////////////////////////////////
-   static char tab[5];
+   static char tab[10];
    float iVal=0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       hmi_UserFlashReadEx(adresseCapteur, 0, 4, (char *)&iVal);
@@ -63,8 +72,9 @@ void ConfigCapteur7OnShow()
       WidgetPaint((tWidget*)&ZeroCapteur12);
    }
 
-   static char tabM[5];
+   static char tabM[10];
    float iValM=0;
+   int iValMP=0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       hmi_UserFlashReadEx(adresseMaxCapteur, 0, 4, (char *)&iValM);
       FloatToStr(tabM,iValM,2);
@@ -72,9 +82,29 @@ void ConfigCapteur7OnShow()
       //sprintf(tabM, "%d", iValM);
       TextButtonTextSet(&MaxCapteur13, tabM);
       WidgetPaint((tWidget*)&MaxCapteur13);
+
+      hmi_UserFlashReadEx(adresseTypeCapteur, 0, 4, (char *)&iValMP);
+      switch(iValMP){
+
+         case 1 :
+               LabelTextSet(&Label144 ,"mA" );
+               LabelTextSet(&Label151 ,"mA" );
+
+         break;
+         case 2:
+               LabelTextSet(&Label144 ,"V" );
+               LabelTextSet(&Label151 ,"V" );
+         break;
+         case 3:
+               LabelTextSet(&Label144 ,"Pulse" );
+               LabelTextSet(&Label151 ,"Pulse" );
+         break;
+
+      }
+
    }
 
-   static char tabV[5];
+   static char tabV[10];
    float iValV=0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       hmi_UserFlashReadEx(adresseVoie, 0, 4, (char *)&iValV);
@@ -83,6 +113,15 @@ void ConfigCapteur7OnShow()
       //sprintf(tabM, "%d", iValM);
       TextButtonTextSet(&Voie36, tabV);
       WidgetPaint((tWidget*)&Voie36);
+   }
+
+   static char tabVP[10];
+   float iValVP=0;
+   if ( hmi_UserFlashConfig(1792) == 1792 ){
+      hmi_UserFlashReadEx(adresseValP, 0, 4, (char *)&iValVP);
+      FloatToStr(tabVP,iValVP,2);
+      TextButtonTextSet(&ValPhysique148, tabVP);
+      WidgetPaint((tWidget*)&ValPhysique148);
    }
 
    if ( hmi_UserFlashConfig(1792) == 1792 ){
@@ -116,8 +155,14 @@ hmi_GotoFrameByName("ConfigModule");
 
 void Etalonnage138OnClick(tWidget *pWidget)
 {
-   hmi_GotoFrameByName("Etalonnage");
+   hmi_GotoFrameByName("Alerte");
 }
 
+void Quit128OnClick(tWidget *pWidget)
+{
+   hmi_GotoFrameByName("Affichage");
+}
 
 #endif
+
+

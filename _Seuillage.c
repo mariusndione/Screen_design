@@ -11,12 +11,24 @@ static tContext *thisContext = &globalContext;
 static void ConnectWidgetVariable();
 static void DisconnectWidgetVariable();
 const unsigned char * ObjectList72_50x30[] = {
-ObjectList72_50x30_0_pucImage_Group6,
-ObjectList72_50x30_0_pucImage_Group6
+ObjectList72_50x30_0_pucImage_Group29,
+ObjectList72_50x30_0_pucImage_Group29
+};
+const unsigned char * ObjectList123_42x27[] = {
+ObjectList123_42x27_0_pucImage_Group30,
+ObjectList123_42x27_0_pucImage_Group30
 };
 
 #include "__seuillage.h"
 
+RectangularButton(erreur122, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, -250, 125, 102, 38,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFF0000, 0x000000, 0x000000,
+   g_pFontCm18, "", 0,
+   200, 100,
+   hmi_Onerreur122Click, hmi_Onerreur122Release, 0,
+   0, -1, 0);
 RectangularButton(TextPushButton71, WIDGET_ROOT, 0,
    0, HMI_DISPLAY_DRIVER_PTR, 0, 0, 50, 30,
    (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_AOPT_ENABLED | PB_STYLE_IMG | PB_STYLE_AUTO_REPEAT | 
@@ -36,7 +48,7 @@ RectangularButton(TextPushButton50, WIDGET_ROOT, 0,
    hmi_OnTextPushButton50Click, hmi_OnTextPushButton50Release, 0,
    0, -1, 0);
 tCheckBoxWidget logique58 = CheckBoxStruct(WIDGET_ROOT, 0, 0,
-   HMI_DISPLAY_DRIVER_PTR, 278, 29, 24, 20,
+   HMI_DISPLAY_DRIVER_PTR, 270, 32, 24, 20,
    CB_AOPT_VISIBLE | CB_AOPT_ENABLED | 
    CB_STYLE_OUTLINE | CB_STYLE_FILL | CB_STYLE_TEXT, 16,
    0xFFFFFF, 0x000000, 0x008000, 
@@ -127,7 +139,7 @@ tCheckBoxWidget S4_Y_N93 = CheckBoxStruct(WIDGET_ROOT, 0, 0,
    g_pFontCm18, "",
    0, hmi_OnS4_Y_N93CheckChange, 0, 0, 2);
 RectangularButton(paramAvances94, WIDGET_ROOT, 0,
-   0, HMI_DISPLAY_DRIVER_PTR, 82, 203, 189, 25,
+   0, HMI_DISPLAY_DRIVER_PTR, 74, 207, 189, 25,
    (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_AOPT_ENABLED | PB_STYLE_AUTO_REPEAT | 
    PB_STYLE_FILL), 0xC0C0C0, 0xFF0000, 0x000000, 0x800000,
    g_pFontCm18b, "Parametres Avances", 0,
@@ -166,6 +178,14 @@ RectangularButton(S1Valeur74, WIDGET_ROOT, 0,
    200, 100,
    hmi_OnS1Valeur74Click, hmi_OnS1Valeur74Release, 0,
    0, -1, 0);
+RectangularButton(Quit125, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, 275, 2, 42, 27,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_AOPT_ENABLED | PB_STYLE_IMG | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFF0000, 0x000000, 0x000000,
+   g_pFontCm18, "", ObjectList123_42x27,
+   200, 100,
+   hmi_OnQuit125Click, hmi_OnQuit125Release, 0,
+   0, 0, 1);
 
 
 Canvas(CanvasSeuillage, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR, 0, 0,
@@ -202,6 +222,9 @@ void renderSeuillage45Vector(tContext *pContext, int ox, int oy) {
   GrContextFontSet(pContext, g_pFontCm18);
   hmi_SetForeground(pContext, 0x00000000);
   hmi_DrawString(pContext, "S4", -1, ox+53, oy+177, 0);
+  GrContextFontSet(pContext, g_pFontCm18);
+  hmi_SetForeground(pContext, 0x00000000);
+  hmi_DrawString(pContext, "Quit", -1, ox+51, oy+-104, 0);
 }
 void OnSeuillage45Paint(tWidget *pWidget, tContext *pContext)
 {
@@ -220,6 +243,7 @@ void hmi_InitFrameWidgets6()
    hmi_EnableDrawings(0);
    Seuillage45OnCreate();
    WidgetAdd(WIDGET_ROOT, (tWidget *)(&CanvasSeuillage));
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&erreur122);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&TextPushButton71);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Timer52);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&TextPushButton50);
@@ -241,6 +265,7 @@ void hmi_InitFrameWidgets6()
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Couleur386);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Couleur291);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&S1Valeur74);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&Quit125);
    hmi_InitGlobalContext();
    ConnectWidgetVariable();
    Seuillage45OnShow();
@@ -251,6 +276,7 @@ void hmi_FreeFrameWidgets6()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasSeuillage));
+   WidgetRemove((tWidget *)(&erreur122));
    WidgetRemove((tWidget *)(&TextPushButton71));
    WidgetRemove((tWidget *)(&Timer52));
    WidgetRemove((tWidget *)(&TextPushButton50));
@@ -272,7 +298,18 @@ void hmi_FreeFrameWidgets6()
    WidgetRemove((tWidget *)(&Couleur386));
    WidgetRemove((tWidget *)(&Couleur291));
    WidgetRemove((tWidget *)(&S1Valeur74));
+   WidgetRemove((tWidget *)(&Quit125));
    Seuillage45OnDestroy();
+}
+
+
+void hmi_Onerreur122Release(tWidget *pWidget)
+{
+}
+
+void hmi_Onerreur122Click(tWidget *pWidget)
+{
+  erreur122OnClick(pWidget);
 }
 
 
@@ -418,6 +455,16 @@ void hmi_OnS1Valeur74Release(tWidget *pWidget)
 void hmi_OnS1Valeur74Click(tWidget *pWidget)
 {
   S1Valeur74OnClick(pWidget);
+}
+
+
+void hmi_OnQuit125Release(tWidget *pWidget)
+{
+}
+
+void hmi_OnQuit125Click(tWidget *pWidget)
+{
+  Quit125OnClick(pWidget);
 }
 
 

@@ -353,7 +353,7 @@ static void hmi_InitGlobalContext()
   GrContextInit(thisContext, thisCanvas->pDisplay);
   GrContextClipRegionSet(thisContext, &(thisCanvas->sPosition));
 }
-void hmi_InitFrameWidgets9()
+void hmi_InitFrameWidgets10()
 {
    hmi_EnableDrawings(0);
    Clavier44OnCreate();
@@ -405,7 +405,7 @@ void hmi_InitFrameWidgets9()
    hmi_EnableDrawings(1);
 }
 
-void hmi_FreeFrameWidgets9()
+void hmi_FreeFrameWidgets10()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasClavier));
@@ -852,7 +852,7 @@ void hmi_OnTimer292Execute(tWidget *pWidget)
 
 static void ConnectWidgetVariable()
 {
-  if (g_hmi_CurrentFrame != 9) return;
+  if (g_hmi_CurrentFrame != 10) return;
 }
 
 static void DisconnectWidgetVariable()
@@ -863,7 +863,7 @@ void hmi_Clavier()
 {
    var_table_init();
    hmi_FreeCurrentFrame();
-   g_hmi_CurrentFrame = 9;
-   hmi_InitFrameWidgets9();
+   g_hmi_CurrentFrame = 10;
+   hmi_InitFrameWidgets10();
 }
 

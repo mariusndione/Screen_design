@@ -1,14 +1,15 @@
 ${TARGET}.axf: _frame0.o
 ${TARGET}.axf: _demarrage.o
-${TARGET}.axf: _PavetNum.o
 ${TARGET}.axf: _ConfigModule.o
 ${TARGET}.axf: _ConfigCapteur.o
+${TARGET}.axf: _Alerte.o
 ${TARGET}.axf: _Etalonnage.o
 ${TARGET}.axf: _Seuillage.o
+${TARGET}.axf: _MsgErreur.o
 ${TARGET}.axf: _SeuilUn.o
 ${TARGET}.axf: _Affichage.o
 ${TARGET}.axf: _Clavier.o
-${TARGET}.axf: _Alerte.o
+${TARGET}.axf: _PavetNum.o
 ${TARGET}.axf: _dict.o
 ${TARGET}.axf: ladder.o
 ${TARGET}.axf: imagedata.o

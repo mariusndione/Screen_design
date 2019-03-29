@@ -144,7 +144,7 @@ static void hmi_InitGlobalContext()
   GrContextInit(thisContext, thisCanvas->pDisplay);
   GrContextClipRegionSet(thisContext, &(thisCanvas->sPosition));
 }
-void hmi_InitFrameWidgets2()
+void hmi_InitFrameWidgets11()
 {
    hmi_EnableDrawings(0);
    PavetNum14OnCreate();
@@ -170,7 +170,7 @@ void hmi_InitFrameWidgets2()
    hmi_EnableDrawings(1);
 }
 
-void hmi_FreeFrameWidgets2()
+void hmi_FreeFrameWidgets11()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasPavetNum));
@@ -331,7 +331,7 @@ void hmi_OnTimer132Execute(tWidget *pWidget)
 
 static void ConnectWidgetVariable()
 {
-  if (g_hmi_CurrentFrame != 2) return;
+  if (g_hmi_CurrentFrame != 11) return;
 }
 
 static void DisconnectWidgetVariable()
@@ -342,7 +342,7 @@ void hmi_PavetNum()
 {
    var_table_init();
    hmi_FreeCurrentFrame();
-   g_hmi_CurrentFrame = 2;
-   hmi_InitFrameWidgets2();
+   g_hmi_CurrentFrame = 11;
+   hmi_InitFrameWidgets11();
 }
 

@@ -7,15 +7,16 @@ static int s_hmi_tcp_inited = 0;
 const char *g_FrameNames[] = 
 {
   "demarrage",
-  "PavetNum",
   "ConfigModule",
   "ConfigCapteur",
+  "Alerte",
   "Etalonnage",
   "Seuillage",
+  "MsgErreur",
   "SeuilUn",
   "Affichage",
   "Clavier",
-  "Alerte",
+  "PavetNum",
 };
 
 const int g_FrameCount = (sizeof(g_FrameNames)/sizeof(char *));
@@ -58,14 +59,14 @@ void hmi_TimerTrigger()
     break;
     }
     case 2: {
-     TimerUpdate(&Timer132, 10);
-    break;
-    }
-    case 3: {
      TimerUpdate(&Timer140, 10);
     break;
     }
+    case 3: {
+    break;
+    }
     case 4: {
+     TimerUpdate(&Timer154, 10);
     break;
     }
     case 5: {
@@ -76,17 +77,23 @@ void hmi_TimerTrigger()
     break;
     }
     case 7: {
-     TimerUpdate(&Timer110, 10);
+     TimerUpdate(&Timer175, 10);
     break;
     }
     case 8: {
+     TimerUpdate(&Timer110, 10);
     break;
     }
     case 9: {
-     TimerUpdate(&Timer292, 10);
+     TimerUpdate(&Timer179, 10);
     break;
     }
     case 10: {
+     TimerUpdate(&Timer292, 10);
+    break;
+    }
+    case 11: {
+     TimerUpdate(&Timer132, 10);
     break;
     }
   }
@@ -106,6 +113,7 @@ void hmi_FreeCurrentFrame()
 	case 8: hmi_FreeFrameWidgets8(); break;
 	case 9: hmi_FreeFrameWidgets9(); break;
 	case 10: hmi_FreeFrameWidgets10(); break;
+	case 11: hmi_FreeFrameWidgets11(); break;
   }
 }
 
@@ -122,15 +130,16 @@ void hmi_GotoFrame(int nFrame)
   switch(nFrame)
   {
 	case 1: hmi_demarrage(); break;
-	case 2: hmi_PavetNum(); break;
-	case 3: hmi_ConfigModule(); break;
-	case 4: hmi_ConfigCapteur(); break;
+	case 2: hmi_ConfigModule(); break;
+	case 3: hmi_ConfigCapteur(); break;
+	case 4: hmi_Alerte(); break;
 	case 5: hmi_Etalonnage(); break;
 	case 6: hmi_Seuillage(); break;
-	case 7: hmi_SeuilUn(); break;
-	case 8: hmi_Affichage(); break;
-	case 9: hmi_Clavier(); break;
-	case 10: hmi_Alerte(); break;
+	case 7: hmi_MsgErreur(); break;
+	case 8: hmi_SeuilUn(); break;
+	case 9: hmi_Affichage(); break;
+	case 10: hmi_Clavier(); break;
+	case 11: hmi_PavetNum(); break;
   }
 
   WidgetMessageQueueClear();

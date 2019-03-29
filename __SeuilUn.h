@@ -23,7 +23,7 @@ int adresseVoie4=78;
 int adresseAdresse4=79;
 int adresseTypeRelais4=80;
 int pos=1;
-int adressePos=90;
+//int adressePos=90;
 extern int adresseS1Activation;
 extern int adresseS2Activation;
 extern int adresseS3Activation;
@@ -171,11 +171,11 @@ void SeuilUn95OnShow()
    } */
 
    int position=pos;
-   static char tabP[5];
+   static char tabP[10];
    sprintf(tabP, "%d", position);
    LabelTextSet(&Relai96 ,tabP );
-   static char tabR[5];
-   char iValR[5];
+   static char tabR[10];
+   char iValR[10];
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       switch(position){
 
@@ -200,7 +200,7 @@ void SeuilUn95OnShow()
       WidgetPaint((tWidget*)&adresse103);
    }
 
-   static char tabH[5];
+   static char tabH[10];
    float iValH=0.0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       switch(position){
@@ -225,7 +225,7 @@ void SeuilUn95OnShow()
    }
 
 
-   static char tabRE[5];
+   static char tabRE[10];
    float iValRE=0.0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       switch(position){
@@ -250,7 +250,7 @@ void SeuilUn95OnShow()
       WidgetPaint((tWidget*)&Retard105);
    }
 
-   static char tabVO[5];
+   static char tabVO[10];
    float iValVO=0;
    if ( hmi_UserFlashConfig(1792) == 1792 ){
       switch(position){
@@ -312,8 +312,8 @@ void Prev164OnClick(tWidget *pWidget)
    else{
       pos--;
    }
-   hmi_UserFlashErase(adressePos);
-   hmi_UserFlashWriteEx(adressePos, 0, 4, (char *)&pos);
+   //hmi_UserFlashErase(adressePos);
+  // hmi_UserFlashWriteEx(adressePos, 0, 4, (char *)&pos);
    TextButtonEnabledSet(&Prev164 ,true );
    FloatToStr(tmp,pos,0);
    LabelTextSet(&Relai96 ,tmp );
@@ -330,8 +330,8 @@ void Next107OnClick(tWidget *pWidget)
       pos++;
 
    }
-   hmi_UserFlashErase(adressePos);
-   hmi_UserFlashWriteEx(adressePos, 0, 4, (char *)&pos);
+   //hmi_UserFlashErase(adressePos);
+   //hmi_UserFlashWriteEx(adressePos, 0, 4, (char *)&pos);
    TextButtonEnabledSet(&Next107 ,true );
    FloatToStr(tmp,pos,0);
    LabelTextSet(&Relai96 ,tmp );
@@ -370,4 +370,9 @@ void Valider111OnClick(tWidget *pWidget)
 void SeuilUn95OnPaint()
 {
 
+}
+
+void Quit126OnClick(tWidget *pWidget)
+{
+   hmi_GotoFrameByName("Affichage");
 }

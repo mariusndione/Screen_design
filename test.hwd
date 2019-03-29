@@ -291,7 +291,7 @@
       ID = 137
       Interval = 1000
       Layer = Layer1
-      Left = -65000
+      Left = -64000
       OnExecute = (
         'Timer137OnExecute' )
       OutlineColor = 0
@@ -321,595 +321,32 @@
     RefObject = 
     Visible = True
   end
-  object PavetNum: THMIFrame
-    ProgramStyle = Standard
-    object Label: THMILabelWidget
-      Alignment = Center
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 40000
-      ID = 15
-      Layer = Layer1
-      Left = 60000
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      RefObject = 
-      Text = 
-      Top = 6000
-      Visible = True
-      Width = 206000
-    end
-    object Sept: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 16
-      Layer = Layer1
-      Left = 13000
-      OnClick = (
-        'Sept16OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '7' )
-      Top = 68000
-      Visible = True
-      Width = 42000
-    end
-    object Huit: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 17
-      Layer = Layer1
-      Left = 65000
-      OnClick = (
-        'Huit17OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '8' )
-      Top = 68000
-      Visible = True
-      Width = 42000
-    end
-    object Neuf: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 18
-      Layer = Layer1
-      Left = 117000
-      OnClick = (
-        'Neuf18OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '9' )
-      Top = 67000
-      Visible = True
-      Width = 42000
-    end
-    object Quatre: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 19
-      Layer = Layer1
-      Left = 14000
-      OnClick = (
-        'Quatre19OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '4' )
-      Top = 103000
-      Visible = True
-      Width = 42000
-    end
-    object Cinq: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 20
-      Layer = Layer1
-      Left = 67000
-      OnClick = (
-        'Cinq20OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '5' )
-      Top = 102000
-      Visible = True
-      Width = 42000
-    end
-    object Six: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 21
-      Layer = Layer1
-      Left = 118000
-      OnClick = (
-        'Six21OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '6' )
-      Top = 102000
-      Visible = True
-      Width = 42000
-    end
-    object Un: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 22
-      Layer = Layer1
-      Left = 15000
-      OnClick = (
-        'Un22OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '1' )
-      Top = 140000
-      Visible = True
-      Width = 42000
-    end
-    object Deux: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 23
-      Layer = Layer1
-      Left = 67000
-      OnClick = (
-        'Deux23OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '2' )
-      Top = 139000
-      Visible = True
-      Width = 42000
-    end
-    object Trois: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 24
-      Layer = Layer1
-      Left = 119000
-      OnClick = (
-        'Trois24OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '3' )
-      Top = 138000
-      Visible = True
-      Width = 42000
-    end
-    object Zero: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 25
-      Layer = Layer1
-      Left = 16000
-      OnClick = (
-        'Zero25OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '0' )
-      Top = 176000
-      Visible = True
-      Width = 93000
-    end
-    object Point: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = Tahoma
-        Size = 14000
-        Style = [fsBold]
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 29000
-      ID = 27
-      Layer = Layer1
-      Left = 118000
-      OnClick = (
-        'Point27OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        '.' )
-      Top = 174000
-      Visible = True
-      Width = 42000
-    end
-    object Entrer: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 61000
-      ID = 26
-      Layer = Layer1
-      Left = 172000
-      OnClick = (
-        'Entrer26OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 16777215
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        'OK' )
-      Top = 138000
-      Visible = True
-      Width = 38000
-    end
-    object Supprime: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 59000
-      ID = 28
-      Layer = Layer1
-      Left = 167000
-      OnClick = (
-        'Supprime28OnClick' )
-      OnRelease = ( )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = (
-        'Suppr' )
-      Top = 69000
-      Visible = True
-      Width = 87000
-    end
-    object Timer: THMITimer
-      property Brush
-        Color = 16777215
-        PropStyle = [psEditForm]
-      end
-      BrushStyle = Solid
-      Enabled = True
-      FillColor = 16777215
-      Height = 32000
-      ID = 132
-      Interval = 1000
-      Layer = Layer1
-      Left = -64000
-      OnExecute = (
-        'Timer132OnExecute' )
-      OutlineColor = 0
-      property Pen
-        PropStyle = [psEditForm]
-      end
-      Top = 207000
-      Visible = True
-      Width = 32000
-    end
-    BackgroundColor = 12632256
-    property Brush
-      Color = 12632256
-      PropStyle = [psEditForm]
-    end
-    BrushStyle = Solid
-    Enabled = False
-    ID = 14
-    OnCreate = (
-      'PavetNum14OnCreate' )
-    OnDestroy = (
-      'PavetNum14OnDestroy' )
-    OnHide = ( )
-    OnPaint = ( )
-    OnShow = (
-      'PavetNum14OnShow' )
-    ProgramStyle = Standard
-    RefObject = 
-    Visible = True
-  end
   object ConfigModule: THMIFrame
     ProgramStyle = Standard
-    object Text: THMIText
-      AutoSize = True
+    object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
-        Style = bsClear
         PropStyle = [psEditForm]
       end
-      BrushStyle = Clear
+      BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = False
-      end
-      Height = 19000
-      ID = 31
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 142
       Layer = Layer1
-      Left = 22000
+      Left = 49000
+      Objects = (
+        '[Pictures]\quit.hwd' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Text = 4-20mA
-      TextAsImage = False
-      Top = 40000
+      Top = -72000
       Visible = True
-      Width = 53000
+      Width = 32000
     end
     object Text: THMIText
       AutoSize = True
@@ -1216,14 +653,14 @@
       ID = 140
       Interval = 1000
       Layer = Layer1
-      Left = -104000
+      Left = -86000
       OnExecute = (
         'Timer140OnExecute' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Top = 174000
+      Top = -1000
       Visible = True
       Width = 32000
     end
@@ -1248,14 +685,14 @@
       Height = 25000
       ID = 30
       Layer = Layer1
-      Left = 37000
+      Left = 9000
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
       Text = 'Configuration du module'
       TextAsImage = False
-      Top = 5000
+      Top = 2000
       Visible = True
       Width = 244000
     end
@@ -1330,9 +767,106 @@
       Visible = True
       Width = 151000
     end
-    BackgroundColor = 16777088
+    object Quit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 129
+      Layer = Layer1
+      Left = 273000
+      OnClick = (
+        'Quit129OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList142
+      Shape = Rectangular
+      Text = ( )
+      Top = 3000
+      Visible = True
+      Width = 42000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 31
+      Layer = Layer1
+      Left = 22000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = 4-20mA
+      TextAsImage = False
+      Top = 40000
+      Visible = True
+      Width = 53000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 143
+      Layer = Layer1
+      Left = 51000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Quit
+      TextAsImage = False
+      Top = -104000
+      Visible = True
+      Width = 31000
+    end
+    BackgroundColor = 16777215
     property Brush
-      Color = 16777088
       PropStyle = [psEditForm]
     end
     BrushStyle = Solid
@@ -1353,6 +887,31 @@
   end
   object ConfigCapteur: THMIFrame
     ProgramStyle = Standard
+    object ObjectList: THMIObjectList
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 146
+      Layer = Layer1
+      Left = -68000
+      Objects = (
+        'Arrow(M)\AMIRight1.hwd' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = -76000
+      Visible = True
+      Width = 32000
+    end
     object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
@@ -1429,36 +988,30 @@
       Visible = True
       Width = 32000
     end
-    object Text: THMIText
-      AutoSize = True
+    object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
-        Style = bsClear
         PropStyle = [psEditForm]
       end
-      BrushStyle = Clear
+      BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = False
-      end
-      Height = 19000
-      ID = 9
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 139
       Layer = Layer1
-      Left = 9000
+      Left = 110000
+      Objects = (
+        '[Pictures]\quit.hwd' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Text = MaxCapteur
-      TextAsImage = False
-      Top = 77000
+      Top = -75000
       Visible = True
-      Width = 87000
+      Width = 32000
     end
     object ZeroCapteur: THMIText
       AutoSize = True
@@ -1547,7 +1100,7 @@
       Height = 27000
       ID = 13
       Layer = Layer1
-      Left = 112000
+      Left = 110000
       OnClick = (
         'MaxCapteur13OnClick' )
       OnRelease = ( )
@@ -1680,7 +1233,7 @@
       Height = 35000
       ID = 138
       Layer = Layer1
-      Left = 19000
+      Left = 17000
       OnClick = (
         'Etalonnage138OnClick' )
       OnRelease = ( )
@@ -1689,7 +1242,7 @@
         PropStyle = [psEditForm]
       end
       Text = 'Appuyez pour etalonner'
-      Top = 198000
+      Top = 197000
       Visible = True
       Width = 292000
     end
@@ -1789,7 +1342,7 @@
       Text = ( )
       Top = 0
       Visible = True
-      Width = 50000
+      Width = 41000
     end
     object Text: THMIText
       AutoSize = True
@@ -1812,16 +1365,16 @@
       Height = 25000
       ID = 8
       Layer = Layer1
-      Left = 53000
+      Left = 50000
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Text = 'Configuration du capteur'
+      Text = 'Configuration capteur'
       TextAsImage = False
-      Top = 0
+      Top = 2000
       Visible = True
-      Width = 247000
+      Width = 215000
     end
     object Text: THMIText
       AutoSize = True
@@ -1890,6 +1443,267 @@
       Visible = True
       Width = 113000
     end
+    object Quit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 128
+      Layer = Layer1
+      Left = 275000
+      OnClick = (
+        'Quit128OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList139
+      Shape = Rectangular
+      Text = ( )
+      Top = 2000
+      Visible = True
+      Width = 42000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 9
+      Layer = Layer1
+      Left = 9000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = MaxCapteur
+      TextAsImage = False
+      Top = 77000
+      Visible = True
+      Width = 87000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 141
+      Layer = Layer1
+      Left = 112000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Quit
+      TextAsImage = False
+      Top = -107000
+      Visible = True
+      Width = 31000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 26000
+      ID = 144
+      Layer = Layer1
+      Left = 173000
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      RefObject = 
+      Text = 
+      Top = 75000
+      Visible = True
+      Width = 45000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 25000
+      ID = 145
+      Layer = Layer1
+      Left = 218000
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      RefObject = ObjectList146
+      Text = 
+      Top = 75000
+      Visible = True
+      Width = 37000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 147
+      Layer = Layer1
+      Left = -92000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = 'flèche droit'
+      TextAsImage = False
+      Top = -111000
+      Visible = True
+      Width = 79000
+    end
+    object ValPhysique: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 148
+      Layer = Layer1
+      Left = 263000
+      OnClick = (
+        'ValPhysique148OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '' )
+      Top = 74000
+      Visible = True
+      Width = 53000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 26000
+      ID = 151
+      Layer = Layer1
+      Left = 177000
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      RefObject = 
+      Text = 
+      Top = 42000
+      Visible = True
+      Width = 37000
+    end
     BackgroundColor = 16777215
     property Brush
       PropStyle = [psEditForm]
@@ -1904,6 +1718,226 @@
     OnPaint = ( )
     OnShow = (
       'ConfigCapteur7OnShow' )
+    ProgramStyle = Standard
+    RefObject = 
+    Visible = True
+  end
+  object Alerte: THMIFrame
+    ProgramStyle = Standard
+    object Timer: THMITimer
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      Height = 32000
+      ID = 154
+      Interval = 1000
+      Layer = Layer1
+      Left = -210000
+      OnExecute = (
+        'Timer154OnExecute' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = 60000
+      Visible = True
+      Width = 32000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 0
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 0
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 54000
+      ID = 121
+      Layer = Layer1
+      Left = 5000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 16777215
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 8000
+      Visible = True
+      Width = 308000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 0
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 0
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 54000
+      ID = 149
+      Layer = Layer1
+      Left = 5000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 16777215
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 173000
+      Visible = True
+      Width = 308000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 0
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 0
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 54000
+      ID = 150
+      Layer = Layer1
+      Left = 5000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 16777215
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 118000
+      Visible = True
+      Width = 308000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 0
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 0
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,14,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 54000
+      ID = 152
+      Layer = Layer1
+      Left = 5000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 16777215
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 63000
+      Visible = True
+      Width = 308000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 156
+      Layer = Layer1
+      Left = -46000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = 'Message de configuration à l'utilisateur avant l'étalonnage'
+      TextAsImage = False
+      Top = -46000
+      Visible = True
+      Width = 411000
+    end
+    BackgroundColor = 0
+    property Brush
+      Color = 0
+      PropStyle = [psEditForm]
+    end
+    BrushStyle = Solid
+    Enabled = False
+    ID = 120
+    OnCreate = (
+      'Alerte120OnCreate' )
+    OnDestroy = ( )
+    OnHide = ( )
+    OnPaint = (
+      'Alerte120OnPaint' )
+    OnShow = (
+      'Alerte120OnShow' )
     ProgramStyle = Standard
     RefObject = 
     Visible = True
@@ -1985,8 +2019,7 @@
       Visible = True
       Width = 32000
     end
-    object Label: THMILabelWidget
-      Alignment = Center
+    object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
         PropStyle = [psEditForm]
@@ -1994,30 +2027,24 @@
       BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 122000
-      ID = 62
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 133
       Layer = Layer1
-      Left = 14000
+      Left = 17000
+      Objects = (
+        '[Pictures]\quit.hwd' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      RefObject = 
-      Text = 
-      Top = 37000
+      Top = -84000
       Visible = True
-      Width = 296000
+      Width = 32000
     end
-    object CoefEtalonnage: THMITextPushButton
-      AutoRepeatPeriod = 1000
-      AutoRepeatThreshold = 2000
+    object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
         PropStyle = [psEditForm]
@@ -2025,31 +2052,22 @@
       BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = True
-      end
-      Height = 39000
-      ID = 63
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 170
       Layer = Layer1
-      Left = 117000
-      OnClick = (
-        'CoefEtalonnage63OnClick' )
-      OnRelease = ( )
+      Left = -68000
+      Objects = (
+        'Arrow(M)\AMIRight1.hwd' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      PressFillColor = 255
-      RefObject = 
-      Shape = Rectangular
-      Text = ( )
-      Top = 193000
+      Top = -92000
       Visible = True
-      Width = 89000
+      Width = 32000
     end
     object TextPushButton: THMITextPushButton
       AutoRepeatPeriod = 1000
@@ -2071,7 +2089,7 @@
       Height = 33000
       ID = 136
       Layer = Layer1
-      Left = 257000
+      Left = 258000
       OnClick = (
         'TextPushButton136OnClick' )
       OnRelease = ( )
@@ -2084,7 +2102,7 @@
       Shape = Rectangular
       Text = (
         'TextPushButton136' )
-      Top = 200000
+      Top = 201000
       Visible = True
       Width = 55000
     end
@@ -2237,7 +2255,7 @@
       Height = 27000
       ID = 163
       Layer = Layer1
-      Left = 141000
+      Left = 50000
       OnClick = ( )
       OnRelease = ( )
       OutlineColor = 0
@@ -2249,9 +2267,370 @@
       Shape = Rectangular
       Text = (
         'TextPushButton163' )
-      Top = 161000
+      Top = 162000
       Visible = True
       Width = 36000
+    end
+    object Quit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 127
+      Layer = Layer1
+      Left = 275000
+      OnClick = (
+        'Quit127OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList133
+      Shape = Rectangular
+      Text = ( )
+      Top = 2000
+      Visible = True
+      Width = 42000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 122000
+      ID = 62
+      Layer = Layer1
+      Left = 14000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      RefObject = 
+      Text = 
+      Top = 37000
+      Visible = True
+      Width = 296000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 135
+      Layer = Layer1
+      Left = 19000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Quit
+      TextAsImage = False
+      Top = -116000
+      Visible = True
+      Width = 31000
+    end
+    object ValPhysique: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 39000
+      ID = 157
+      Layer = Layer1
+      Left = 169000
+      OnClick = (
+        'ValPhysique157OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 189000
+      Visible = True
+      Width = 78000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 158
+      Layer = Layer1
+      Left = 171000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList161
+      Shape = Rectangular
+      Text = (
+        'TextPushButton163' )
+      Top = 162000
+      Visible = True
+      Width = 36000
+    end
+    object Reel: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 159
+      Layer = Layer1
+      Left = 9000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Reel
+      TextAsImage = False
+      Top = 168000
+      Visible = True
+      Width = 32000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 160
+      Layer = Layer1
+      Left = 215000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Physique
+      TextAsImage = False
+      Top = 166000
+      Visible = True
+      Width = 64000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 12000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,12,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 40000
+      ID = 168
+      Layer = Layer1
+      Left = 95000
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      RefObject = 
+      Text = 
+      Top = 188000
+      Visible = True
+      Width = 34000
+    end
+    object Label: THMILabelWidget
+      Alignment = Center
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 25000
+      ID = 169
+      Layer = Layer1
+      Left = 136000
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      RefObject = ObjectList170
+      Text = 
+      Top = 196000
+      Visible = True
+      Width = 26000
+    end
+    object ValReelle: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 39000
+      ID = 63
+      Layer = Layer1
+      Left = 11000
+      OnClick = (
+        'ValReelle63OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 189000
+      Visible = True
+      Width = 78000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 171
+      Layer = Layer1
+      Left = -92000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = 'flèche droit'
+      TextAsImage = False
+      Top = -127000
+      Visible = True
+      Width = 79000
     end
     BackgroundColor = 16777215
     property Brush
@@ -2272,6 +2651,31 @@
   end
   object Seuillage: THMIFrame
     ProgramStyle = Standard
+    object ObjectList: THMIObjectList
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 123
+      Layer = Layer1
+      Left = 49000
+      Objects = (
+        '[Pictures]\quit.hwd' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = -72000
+      Visible = True
+      Width = 32000
+    end
     object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
@@ -2346,6 +2750,42 @@
       Top = -69000
       Visible = True
       Width = 32000
+    end
+    object erreur: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 38000
+      ID = 122
+      Layer = Layer1
+      Left = -250000
+      OnClick = (
+        'erreur122OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 125000
+      Visible = True
+      Width = 102000
     end
     object Text: THMIText
       AutoSize = True
@@ -2489,14 +2929,14 @@
       ID = 52
       Interval = 1000
       Layer = Layer1
-      Left = -119000
+      Left = -129000
       OnExecute = (
         'Timer52OnExecute' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Top = -50000
+      Top = -3000
       Visible = True
       Width = 32000
     end
@@ -2648,7 +3088,7 @@
       Height = 20001
       ID = 58
       Layer = Layer1
-      Left = 278000
+      Left = 270000
       OnChange = (
         'logique58OnChange' )
       OutlineColor = 0
@@ -2658,7 +3098,7 @@
       RefObject = 
       Selected = False
       Text = ( )
-      Top = 29000
+      Top = 32000
       Visible = True
       Width = 24001
     end
@@ -3195,7 +3635,7 @@
       Height = 25000
       ID = 94
       Layer = Layer1
-      Left = 82000
+      Left = 74000
       OnClick = (
         'paramAvances94OnClick' )
       OnRelease = ( )
@@ -3208,7 +3648,7 @@
       Shape = Rectangular
       Text = (
         'Parametres Avances' )
-      Top = 203000
+      Top = 207000
       Visible = True
       Width = 189000
     end
@@ -3372,6 +3812,73 @@
       Visible = True
       Width = 45000
     end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 124
+      Layer = Layer1
+      Left = 51000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Quit
+      TextAsImage = False
+      Top = -104000
+      Visible = True
+      Width = 31000
+    end
+    object Quit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 125
+      Layer = Layer1
+      Left = 275000
+      OnClick = (
+        'Quit125OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList123
+      Shape = Rectangular
+      Text = ( )
+      Top = 2000
+      Visible = True
+      Width = 42000
+    end
     BackgroundColor = 16777215
     property Brush
       PropStyle = [psEditForm]
@@ -3387,6 +3894,222 @@
     OnPaint = ( )
     OnShow = (
       'Seuillage45OnShow' )
+    ProgramStyle = Standard
+    RefObject = 
+    Visible = True
+  end
+  object MsgErreur: THMIFrame
+    ProgramStyle = Standard
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 16777215
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 66000
+      ID = 173
+      Layer = Layer1
+      Left = 14000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 41000
+      Visible = True
+      Width = 292000
+    end
+    object TextPushButton: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 16777215
+      property Font
+        Color = 255
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12,255
+        IsIcpdas_eb_ = True
+      end
+      Height = 66000
+      ID = 174
+      Layer = Layer1
+      Left = 14000
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 16777215
+      property Pen
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = ( )
+      Top = 106000
+      Visible = True
+      Width = 292000
+    end
+    object Timer: THMITimer
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      Height = 32000
+      ID = 175
+      Interval = 1000
+      Layer = Layer1
+      Left = -140000
+      OnExecute = (
+        'Timer175OnExecute' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = 70000
+      Visible = True
+      Width = 32000
+    end
+    object Quitter: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 12632256
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 12632256
+      property Font
+        Color = 32768
+        Name = 'CMU Serif'
+        Size = 16000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,16,32768
+        IsIcpdas_eb_ = True
+      end
+      Height = 32000
+      ID = 176
+      Layer = Layer1
+      Left = 88000
+      OnClick = (
+        'Quitter176OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        'Quitter' )
+      Top = 189000
+      Visible = True
+      Width = 162000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Name = 'CMU Serif'
+        Size = 18000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Bold,18,
+        IsIcpdas_eb_ = False
+      end
+      Height = 28000
+      ID = 177
+      Layer = Layer1
+      Left = 106000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = ERREUR
+      TextAsImage = False
+      Top = 4000
+      Visible = True
+      Width = 110000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 178
+      Layer = Layer1
+      Left = 30000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = 'Erreur lors de la saisie des seuils'
+      TextAsImage = False
+      Top = -46000
+      Visible = True
+      Width = 231000
+    end
+    BackgroundColor = 16777215
+    property Brush
+      PropStyle = [psEditForm]
+    end
+    BrushStyle = Solid
+    Enabled = False
+    ID = 172
+    OnCreate = (
+      'MsgErreur172OnCreate' )
+    OnDestroy = ( )
+    OnHide = ( )
+    OnPaint = (
+      'MsgErreur172OnPaint' )
+    OnShow = (
+      'MsgErreur172OnShow' )
     ProgramStyle = Standard
     RefObject = 
     Visible = True
@@ -3468,34 +4191,28 @@
       Visible = True
       Width = 32000
     end
-    object Text: THMIText
-      AutoSize = True
+    object ObjectList: THMIObjectList
       property Brush
         Color = 16777215
-        Style = bsClear
         PropStyle = [psEditForm]
       end
-      BrushStyle = Clear
+      BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
-      property Font
-        Color = -16777208
-        Name = 'CMU Serif'
-        Size = 12000
-        HMIFontCodeString = Cm,Regular,12
-        IsIcpdas_eb_ = False
-      end
-      Height = 19000
-      ID = 99
+      FitToWidget = True
+      ForceCompile = False
+      Height = 32000
+      HiColor = True
+      ID = 130
       Layer = Layer1
-      Left = 7000
+      Left = 17000
+      Objects = (
+        '[Pictures]\quit.hwd' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Text = Voie
-      TextAsImage = False
-      Top = 107000
+      Top = -96000
       Visible = True
       Width = 32000
     end
@@ -4078,14 +4795,14 @@
       ID = 110
       Interval = 1000
       Layer = Layer1
-      Left = -185000
+      Left = -141000
       OnExecute = (
         'Timer110OnExecute' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Top = 81000
+      Top = 4000
       Visible = True
       Width = 32000
     end
@@ -4120,6 +4837,104 @@
       Top = 201000
       Visible = True
       Width = 57000
+    end
+    object Quit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 27000
+      ID = 126
+      Layer = Layer1
+      Left = 275000
+      OnClick = (
+        'Quit126OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = ObjectList130
+      Shape = Rectangular
+      Text = ( )
+      Top = 2000
+      Visible = True
+      Width = 42000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 99
+      Layer = Layer1
+      Left = 7000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Voie
+      TextAsImage = False
+      Top = 107000
+      Visible = True
+      Width = 32000
+    end
+    object Text: THMIText
+      AutoSize = True
+      property Brush
+        Color = 16777215
+        Style = bsClear
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Clear
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = False
+      end
+      Height = 19000
+      ID = 131
+      Layer = Layer1
+      Left = 19000
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Text = Quit
+      TextAsImage = False
+      Top = -128000
+      Visible = True
+      Width = 31000
     end
     BackgroundColor = 16777215
     property Brush
@@ -4274,8 +5089,7 @@
       Visible = True
       Width = 81000
     end
-    object Label: THMILabelWidget
-      Alignment = Center
+    object Timer: THMITimer
       property Brush
         Color = 16777215
         PropStyle = [psEditForm]
@@ -4283,58 +5097,94 @@
       BrushStyle = Solid
       Enabled = True
       FillColor = 16777215
+      Height = 32000
+      ID = 179
+      Interval = 1000
+      Layer = Layer1
+      Left = -204000
+      OnExecute = (
+        'Timer179OnExecute' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = 56000
+      Visible = True
+      Width = 32000
+    end
+    object Mesure: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = False
+      FillColor = 16777215
       property Font
-        Color = 255
+        Color = -16777208
         Name = 'CMU Serif'
         Size = 42000
         Style = [fsBold]
-        HMIFontCodeString = Cm,Bold,42,255
+        HMIFontCodeString = Cm,Bold,42,0
         IsIcpdas_eb_ = True
       end
-      Height = 142000
+      Height = 185000
       ID = 118
       Layer = Layer1
-      Left = 15000
-      OutlineColor = 0
+      Left = 0
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 16777215
       property Pen
+        Color = 16777215
         PropStyle = [psEditForm]
       end
+      PressFillColor = 16777215
       RefObject = 
-      Text = mesure
-      Top = 20000
+      Shape = Rectangular
+      Text = ( )
+      Top = -2000
       Visible = True
-      Width = 222000
+      Width = 241000
     end
-    object Label: THMILabelWidget
-      Alignment = Center
+    object UniM: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
       property Brush
         Color = 16777215
         PropStyle = [psEditForm]
       end
       BrushStyle = Solid
-      Enabled = True
+      Enabled = False
       FillColor = 16777215
       property Font
-        Color = 16711680
+        Color = -16777208
         Name = 'CMU Serif'
-        Size = 40000
+        Size = 32000
         Style = [fsBold]
-        HMIFontCodeString = Cm,Bold,40,16711680
+        HMIFontCodeString = Cm,Bold,32,0
         IsIcpdas_eb_ = True
       end
-      Height = 52000
+      Height = 61000
       ID = 119
       Layer = Layer1
-      Left = 16000
-      OutlineColor = 0
+      Left = 0
+      OnClick = ( )
+      OnRelease = ( )
+      OutlineColor = 16777215
       property Pen
+        Color = 16777215
         PropStyle = [psEditForm]
       end
+      PressFillColor = 16777215
       RefObject = 
-      Text = Unite
-      Top = 167000
+      Shape = Rectangular
+      Text = ( )
+      Top = 180000
       Visible = True
-      Width = 220000
+      Width = 241000
     end
     BackgroundColor = 16777215
     property Brush
@@ -4343,11 +5193,13 @@
     BrushStyle = Solid
     Enabled = False
     ID = 112
-    OnCreate = ( )
+    OnCreate = (
+      'Affichage112OnCreate' )
     OnDestroy = ( )
     OnHide = ( )
     OnPaint = ( )
-    OnShow = ( )
+    OnShow = (
+      'Affichage112OnShow' )
     ProgramStyle = Standard
     RefObject = 
     Visible = True
@@ -30301,14 +31153,14 @@
       ID = 292
       Interval = 1000
       Layer = Layer1
-      Left = -95000
+      Left = -77000
       OnExecute = (
         'Timer292OnExecute' )
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
-      Top = 101000
+      Top = 3000
       Visible = True
       Width = 32000
     end
@@ -30332,49 +31184,48 @@
     RefObject = 
     Visible = True
   end
-  object Alerte: THMIFrame
+  object PavetNum: THMIFrame
     ProgramStyle = Standard
     object Label: THMILabelWidget
       Alignment = Center
       property Brush
-        Color = 255
+        Color = 16777215
         PropStyle = [psEditForm]
       end
       BrushStyle = Solid
       Enabled = True
-      FillColor = 255
+      FillColor = 16777215
       property Font
-        Color = -16777211
+        Color = -16777208
         Name = 'CMU Serif'
-        Size = 20000
-        Style = [fsBold]
-        HMIFontCodeString = Cm,Bold,20,16777215
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
         IsIcpdas_eb_ = True
       end
-      Height = 167000
-      ID = 121
+      Height = 40000
+      ID = 15
       Layer = Layer1
-      Left = 11000
+      Left = 60000
       OutlineColor = 0
       property Pen
         PropStyle = [psEditForm]
       end
       RefObject = 
       Text = 
-      Top = 21000
+      Top = 6000
       Visible = True
-      Width = 291000
+      Width = 206000
     end
-    object TextPushButton: THMITextPushButton
+    object Sept: THMITextPushButton
       AutoRepeatPeriod = 1000
       AutoRepeatThreshold = 2000
       property Brush
-        Color = 65280
+        Color = 16777215
         PropStyle = [psEditForm]
       end
       BrushStyle = Solid
       Enabled = True
-      FillColor = 65280
+      FillColor = 16777215
       property Font
         Color = -16777208
         Name = 'CMU Serif'
@@ -30383,10 +31234,11 @@
         IsIcpdas_eb_ = True
       end
       Height = 29000
-      ID = 122
+      ID = 16
       Layer = Layer1
-      Left = 249000
-      OnClick = ( )
+      Left = 13000
+      OnClick = (
+        'Sept16OnClick' )
       OnRelease = ( )
       OutlineColor = 0
       property Pen
@@ -30396,24 +31248,495 @@
       RefObject = 
       Shape = Rectangular
       Text = (
-        'OK' )
-      Top = 202000
+        '7' )
+      Top = 68000
       Visible = True
-      Width = 57000
+      Width = 42000
     end
-    BackgroundColor = 0
+    object Huit: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 17
+      Layer = Layer1
+      Left = 65000
+      OnClick = (
+        'Huit17OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '8' )
+      Top = 68000
+      Visible = True
+      Width = 42000
+    end
+    object Neuf: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 18
+      Layer = Layer1
+      Left = 117000
+      OnClick = (
+        'Neuf18OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '9' )
+      Top = 67000
+      Visible = True
+      Width = 42000
+    end
+    object Quatre: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 19
+      Layer = Layer1
+      Left = 14000
+      OnClick = (
+        'Quatre19OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '4' )
+      Top = 103000
+      Visible = True
+      Width = 42000
+    end
+    object Cinq: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 20
+      Layer = Layer1
+      Left = 67000
+      OnClick = (
+        'Cinq20OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '5' )
+      Top = 102000
+      Visible = True
+      Width = 42000
+    end
+    object Six: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 21
+      Layer = Layer1
+      Left = 118000
+      OnClick = (
+        'Six21OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '6' )
+      Top = 102000
+      Visible = True
+      Width = 42000
+    end
+    object Un: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 22
+      Layer = Layer1
+      Left = 15000
+      OnClick = (
+        'Un22OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '1' )
+      Top = 140000
+      Visible = True
+      Width = 42000
+    end
+    object Deux: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 23
+      Layer = Layer1
+      Left = 67000
+      OnClick = (
+        'Deux23OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '2' )
+      Top = 139000
+      Visible = True
+      Width = 42000
+    end
+    object Trois: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 24
+      Layer = Layer1
+      Left = 119000
+      OnClick = (
+        'Trois24OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '3' )
+      Top = 138000
+      Visible = True
+      Width = 42000
+    end
+    object Zero: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 25
+      Layer = Layer1
+      Left = 16000
+      OnClick = (
+        'Zero25OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '0' )
+      Top = 176000
+      Visible = True
+      Width = 93000
+    end
+    object Point: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = Tahoma
+        Size = 14000
+        Style = [fsBold]
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 29000
+      ID = 27
+      Layer = Layer1
+      Left = 118000
+      OnClick = (
+        'Point27OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        '.' )
+      Top = 174000
+      Visible = True
+      Width = 42000
+    end
+    object Entrer: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 61000
+      ID = 26
+      Layer = Layer1
+      Left = 172000
+      OnClick = (
+        'Entrer26OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 16777215
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        'OK' )
+      Top = 138000
+      Visible = True
+      Width = 38000
+    end
+    object Supprime: THMITextPushButton
+      AutoRepeatPeriod = 1000
+      AutoRepeatThreshold = 2000
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      property Font
+        Color = -16777208
+        Name = 'CMU Serif'
+        Size = 12000
+        HMIFontCodeString = Cm,Regular,12
+        IsIcpdas_eb_ = True
+      end
+      Height = 59000
+      ID = 28
+      Layer = Layer1
+      Left = 167000
+      OnClick = (
+        'Supprime28OnClick' )
+      OnRelease = ( )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      PressFillColor = 255
+      RefObject = 
+      Shape = Rectangular
+      Text = (
+        'Suppr' )
+      Top = 69000
+      Visible = True
+      Width = 87000
+    end
+    object Timer: THMITimer
+      property Brush
+        Color = 16777215
+        PropStyle = [psEditForm]
+      end
+      BrushStyle = Solid
+      Enabled = True
+      FillColor = 16777215
+      Height = 32000
+      ID = 132
+      Interval = 1000
+      Layer = Layer1
+      Left = -85000
+      OnExecute = (
+        'Timer132OnExecute' )
+      OutlineColor = 0
+      property Pen
+        PropStyle = [psEditForm]
+      end
+      Top = 2000
+      Visible = True
+      Width = 32000
+    end
+    BackgroundColor = 12632256
     property Brush
-      Color = 0
+      Color = 12632256
       PropStyle = [psEditForm]
     end
     BrushStyle = Solid
     Enabled = False
-    ID = 120
-    OnCreate = ( )
-    OnDestroy = ( )
+    ID = 14
+    OnCreate = (
+      'PavetNum14OnCreate' )
+    OnDestroy = (
+      'PavetNum14OnDestroy' )
     OnHide = ( )
     OnPaint = ( )
-    OnShow = ( )
+    OnShow = (
+      'PavetNum14OnShow' )
     ProgramStyle = Standard
     RefObject = 
     Visible = True

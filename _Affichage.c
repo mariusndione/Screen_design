@@ -49,18 +49,24 @@ RectangularButton(ConfigC117, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR,
     240, 62, 81, 62, PB_STYLE_FILL|PB_STYLE_IMG|PB_STYLE_TEXT |PB_AOPT_VISIBLE|PB_AOPT_ENABLED, ClrSilver, ClrSilver, 0, ClrSilver,
     g_pFontCm18i, "", ImageArr_ConfigC117, 0, 0,
     hmi_OnConfigC117Click, hmi_OnConfigC117Release, 0, 0, 1, 2);
-Canvas(Label118, WIDGET_ROOT, 0, 0,
-   HMI_DISPLAY_DRIVER_PTR, 15, 20, 222, 142,
-   CANVAS_STYLE_TEXT | CANVAS_STYLE_FILL | CANVAS_STYLE_OUTLINE
-    | CANVAS_STYLE_TEXT_HCENTER | CV_AOPT_VISIBLE | CV_AOPT_ENABLED | CANVAS_STYLE_TEXT_OPAQUE
-   , 0xFFFFFF, 0x000000, 0xFF0000,
-   g_pFontCm42b, "mesure", 0, 0);
-Canvas(Label119, WIDGET_ROOT, 0, 0,
-   HMI_DISPLAY_DRIVER_PTR, 16, 167, 220, 52,
-   CANVAS_STYLE_TEXT | CANVAS_STYLE_FILL | CANVAS_STYLE_OUTLINE
-    | CANVAS_STYLE_TEXT_HCENTER | CV_AOPT_VISIBLE | CV_AOPT_ENABLED | CANVAS_STYLE_TEXT_OPAQUE
-   , 0xFFFFFF, 0x000000, 0x0000FF,
-   g_pFontCm42b, "Unite", 0, 0);
+TimerWidget(Timer179, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR, 0, 0, 32, 32,
+   TS_STYLE_TIMER_ENABLED, 1000, 0, hmi_OnTimer179Execute);
+RectangularButton(Mesure118, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, 0, -2, 241, 185,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFFFFFF, 0xFFFFFF, 0x000000,
+   g_pFontCm42b, "", 0,
+   200, 100,
+   hmi_OnMesure118Click, hmi_OnMesure118Release, 0,
+   0, -1, 0);
+RectangularButton(UniM119, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, 0, 180, 241, 61,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFFFFFF, 0xFFFFFF, 0x000000,
+   g_pFontCm38b, "", 0,
+   200, 100,
+   hmi_OnUniM119Click, hmi_OnUniM119Release, 0,
+   0, -1, 0);
 
 
 Canvas(CanvasAffichage, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR, 0, 0,
@@ -80,22 +86,25 @@ static void hmi_InitGlobalContext()
   GrContextInit(thisContext, thisCanvas->pDisplay);
   GrContextClipRegionSet(thisContext, &(thisCanvas->sPosition));
 }
-void hmi_InitFrameWidgets8()
+void hmi_InitFrameWidgets9()
 {
    hmi_EnableDrawings(0);
+   Affichage112OnCreate();
    WidgetAdd(WIDGET_ROOT, (tWidget *)(&CanvasAffichage));
    WidgetAdd(WIDGET_ROOT, (tWidget *)&ConfigM113);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&ConfigE115);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&ConfigS116);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&ConfigC117);
-   WidgetAdd(WIDGET_ROOT, (tWidget *)&Label118);
-   WidgetAdd(WIDGET_ROOT, (tWidget *)&Label119);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&Timer179);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&Mesure118);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&UniM119);
    hmi_InitGlobalContext();
    ConnectWidgetVariable();
+   Affichage112OnShow();
    hmi_EnableDrawings(1);
 }
 
-void hmi_FreeFrameWidgets8()
+void hmi_FreeFrameWidgets9()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasAffichage));
@@ -103,8 +112,9 @@ void hmi_FreeFrameWidgets8()
    WidgetRemove((tWidget *)(&ConfigE115));
    WidgetRemove((tWidget *)(&ConfigS116));
    WidgetRemove((tWidget *)(&ConfigC117));
-   WidgetRemove((tWidget *)(&Label118));
-   WidgetRemove((tWidget *)(&Label119));
+   WidgetRemove((tWidget *)(&Timer179));
+   WidgetRemove((tWidget *)(&Mesure118));
+   WidgetRemove((tWidget *)(&UniM119));
 }
 
 
@@ -148,9 +158,33 @@ void hmi_OnConfigC117Click(tWidget *pWidget)
   ConfigC117OnClick(pWidget);
 }
 
+void hmi_OnTimer179Execute(tWidget *pWidget)
+{
+  Timer179OnExecute(pWidget);
+}
+
+
+void hmi_OnMesure118Release(tWidget *pWidget)
+{
+}
+
+void hmi_OnMesure118Click(tWidget *pWidget)
+{
+}
+
+
+void hmi_OnUniM119Release(tWidget *pWidget)
+{
+}
+
+void hmi_OnUniM119Click(tWidget *pWidget)
+{
+}
+
+
 static void ConnectWidgetVariable()
 {
-  if (g_hmi_CurrentFrame != 8) return;
+  if (g_hmi_CurrentFrame != 9) return;
 }
 
 static void DisconnectWidgetVariable()
@@ -161,7 +195,7 @@ void hmi_Affichage()
 {
    var_table_init();
    hmi_FreeCurrentFrame();
-   g_hmi_CurrentFrame = 8;
-   hmi_InitFrameWidgets8();
+   g_hmi_CurrentFrame = 9;
+   hmi_InitFrameWidgets9();
 }
 

@@ -15,6 +15,10 @@ static const unsigned char * ImageArr_OK37[] =
 pucImage_OK37, 
 pucImagePress_OK37
 };
+const unsigned char * ObjectList142_42x27[] = {
+ObjectList142_42x27_0_pucImage_Group30,
+ObjectList142_42x27_0_pucImage_Group30
+};
 
 #include "__configmodule.h"
 
@@ -69,15 +73,20 @@ RectangularButton(TextPushButton46, WIDGET_ROOT, 0,
    200, 100,
    hmi_OnTextPushButton46Click, hmi_OnTextPushButton46Release, 0,
    0, -1, 0);
+RectangularButton(Quit129, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, 273, 3, 42, 27,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_AOPT_ENABLED | PB_STYLE_IMG | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFF0000, 0x000000, 0x000000,
+   g_pFontCm18, "", ObjectList142_42x27,
+   200, 100,
+   hmi_OnQuit129Click, hmi_OnQuit129Release, 0,
+   0, 0, 1);
 
 
 Canvas(CanvasConfigModule, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR, 0, 0,
        320, 240, (CANVAS_STYLE_APP_DRAWN | CV_AOPT_VISIBLE), 0, 0, 0, 0, 0, 0, OnConfigModule29Paint);
 
 void renderConfigModule29Vector(tContext *pContext, int ox, int oy) {
-  GrContextFontSet(pContext, g_pFontCm18);
-  hmi_SetForeground(pContext, 0x00000000);
-  hmi_DrawString(pContext, "4-20mA", -1, ox+22, oy+40, 0);
   GrContextFontSet(pContext, g_pFontCm18);
   hmi_SetForeground(pContext, 0x00000000);
   hmi_DrawString(pContext, "0-10V", -1, ox+22, oy+76, 0);
@@ -92,11 +101,17 @@ void renderConfigModule29Vector(tContext *pContext, int ox, int oy) {
   hmi_DrawString(pContext, "Type Module", -1, ox+21, oy+141, 0);
   GrContextFontSet(pContext, g_pFontCm22b);
   hmi_SetForeground(pContext, 0x00000000);
-  hmi_DrawString(pContext, "Configuration du module", -1, ox+37, oy+5, 0);
+  hmi_DrawString(pContext, "Configuration du module", -1, ox+9, oy+2, 0);
+  GrContextFontSet(pContext, g_pFontCm18);
+  hmi_SetForeground(pContext, 0x00000000);
+  hmi_DrawString(pContext, "4-20mA", -1, ox+22, oy+40, 0);
+  GrContextFontSet(pContext, g_pFontCm18);
+  hmi_SetForeground(pContext, 0x00000000);
+  hmi_DrawString(pContext, "Quit", -1, ox+51, oy+-104, 0);
 }
 void OnConfigModule29Paint(tWidget *pWidget, tContext *pContext)
 {
-   hmi_SetForeground(pContext, 0x80FFFF);
+   hmi_SetForeground(pContext, 0xFFFFFF);
    hmi_FillRect(pContext, 0, 0, 320, 240);
  ConfigModule29OnPaint();
    renderConfigModule29Vector(pContext, 0, 0);
@@ -107,7 +122,7 @@ static void hmi_InitGlobalContext()
   GrContextInit(thisContext, thisCanvas->pDisplay);
   GrContextClipRegionSet(thisContext, &(thisCanvas->sPosition));
 }
-void hmi_InitFrameWidgets3()
+void hmi_InitFrameWidgets2()
 {
    hmi_EnableDrawings(0);
    ConfigModule29OnCreate();
@@ -120,13 +135,14 @@ void hmi_InitFrameWidgets3()
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Timer140);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Module6);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&TextPushButton46);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&Quit129);
    hmi_InitGlobalContext();
    ConnectWidgetVariable();
    ConfigModule29OnShow();
    hmi_EnableDrawings(1);
 }
 
-void hmi_FreeFrameWidgets3()
+void hmi_FreeFrameWidgets2()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasConfigModule));
@@ -138,6 +154,7 @@ void hmi_FreeFrameWidgets3()
    WidgetRemove((tWidget *)(&Timer140));
    WidgetRemove((tWidget *)(&Module6));
    WidgetRemove((tWidget *)(&TextPushButton46));
+   WidgetRemove((tWidget *)(&Quit129));
    ConfigModule29OnDestroy();
 }
 
@@ -205,9 +222,19 @@ void hmi_OnTextPushButton46Click(tWidget *pWidget)
 }
 
 
+void hmi_OnQuit129Release(tWidget *pWidget)
+{
+}
+
+void hmi_OnQuit129Click(tWidget *pWidget)
+{
+  Quit129OnClick(pWidget);
+}
+
+
 static void ConnectWidgetVariable()
 {
-  if (g_hmi_CurrentFrame != 3) return;
+  if (g_hmi_CurrentFrame != 2) return;
 }
 
 static void DisconnectWidgetVariable()
@@ -218,7 +245,7 @@ void hmi_ConfigModule()
 {
    var_table_init();
    hmi_FreeCurrentFrame();
-   g_hmi_CurrentFrame = 3;
-   hmi_InitFrameWidgets3();
+   g_hmi_CurrentFrame = 2;
+   hmi_InitFrameWidgets2();
 }
 

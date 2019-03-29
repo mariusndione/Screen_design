@@ -21,6 +21,9 @@
     <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="One" Default="0" Binding="" Comment="" />
     <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="NextF" Default="1" Binding="" Comment="" />
     <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="tmp" Default="0" Binding="" Comment="" />
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="ErrFrom" Default="0" Binding="" Comment="" />
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="ErrFrom3" Default="0" Binding="" Comment="" />
+    <IO Type="Virtual" StartAddress="0" Offset="0" RawName="" Name="ErrFrom4" Default="0" Binding="" Comment="" />
   </Virtual>
 
   <Configuration>

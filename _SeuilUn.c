@@ -16,16 +16,20 @@ pucImage_Valider111,
 pucImagePress_Valider111
 };
 const unsigned char * ObjectList60_45x31[] = {
-ObjectList60_45x31_0_pucImage_Group6,
-ObjectList60_45x31_0_pucImage_Group6
+ObjectList60_45x31_0_pucImage_Group29,
+ObjectList60_45x31_0_pucImage_Group29
 };
 const unsigned char * ObjectList155_50x30[] = {
-ObjectList155_50x30_0_pucImage_Group6,
-ObjectList155_50x30_0_pucImage_Group6
+ObjectList155_50x30_0_pucImage_Group29,
+ObjectList155_50x30_0_pucImage_Group29
 };
 const unsigned char * ObjectList155_44x33[] = {
-ObjectList155_44x33_0_pucImage_Group6,
-ObjectList155_44x33_0_pucImage_Group6
+ObjectList155_44x33_0_pucImage_Group29,
+ObjectList155_44x33_0_pucImage_Group29
+};
+const unsigned char * ObjectList130_42x27[] = {
+ObjectList130_42x27_0_pucImage_Group30,
+ObjectList130_42x27_0_pucImage_Group30
 };
 
 #include "__seuilun.h"
@@ -105,15 +109,20 @@ RectangularButton(Valider111, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR,
     251, 201, 57, 30, PB_STYLE_FILL|PB_STYLE_IMG|PB_STYLE_TEXT |PB_AOPT_VISIBLE|PB_AOPT_ENABLED, ClrSilver, ClrSilver, 0, ClrSilver,
     g_pFontCm18, "", ImageArr_Valider111, 0, 0,
     hmi_OnValider111Click, hmi_OnValider111Release, 0, 0, 1, 2);
+RectangularButton(Quit126, WIDGET_ROOT, 0,
+   0, HMI_DISPLAY_DRIVER_PTR, 275, 2, 42, 27,
+   (PB_STYLE_OUTLINE | PB_STYLE_TEXT_OPAQUE | PB_STYLE_TEXT | PB_AOPT_VISIBLE | PB_AOPT_ENABLED | PB_STYLE_IMG | PB_STYLE_AUTO_REPEAT | 
+   PB_STYLE_FILL), 0xFFFFFF, 0xFF0000, 0x000000, 0x000000,
+   g_pFontCm18, "", ObjectList130_42x27,
+   200, 100,
+   hmi_OnQuit126Click, hmi_OnQuit126Release, 0,
+   0, 0, 1);
 
 
 Canvas(CanvasSeuilUn, WIDGET_ROOT, 0, 0, HMI_DISPLAY_DRIVER_PTR, 0, 0,
        320, 240, (CANVAS_STYLE_APP_DRAWN | CV_AOPT_VISIBLE), 0, 0, 0, 0, 0, 0, OnSeuilUn95Paint);
 
 void renderSeuilUn95Vector(tContext *pContext, int ox, int oy) {
-  GrContextFontSet(pContext, g_pFontCm18);
-  hmi_SetForeground(pContext, 0x00000000);
-  hmi_DrawString(pContext, "Voie", -1, ox+7, oy+107, 0);
   GrContextFontSet(pContext, g_pFontCm18);
   hmi_SetForeground(pContext, 0x00000000);
   hmi_DrawString(pContext, "NO/NC", -1, ox+211, oy+35, 0);
@@ -138,6 +147,12 @@ void renderSeuilUn95Vector(tContext *pContext, int ox, int oy) {
   GrContextFontSet(pContext, g_pFontCm22b);
   hmi_SetForeground(pContext, 0x00FF0000);
   hmi_DrawString(pContext, "Relai", -1, ox+98, oy+7, 0);
+  GrContextFontSet(pContext, g_pFontCm18);
+  hmi_SetForeground(pContext, 0x00000000);
+  hmi_DrawString(pContext, "Voie", -1, ox+7, oy+107, 0);
+  GrContextFontSet(pContext, g_pFontCm18);
+  hmi_SetForeground(pContext, 0x00000000);
+  hmi_DrawString(pContext, "Quit", -1, ox+19, oy+-128, 0);
 }
 void OnSeuilUn95Paint(tWidget *pWidget, tContext *pContext)
 {
@@ -152,7 +167,7 @@ static void hmi_InitGlobalContext()
   GrContextInit(thisContext, thisCanvas->pDisplay);
   GrContextClipRegionSet(thisContext, &(thisCanvas->sPosition));
 }
-void hmi_InitFrameWidgets7()
+void hmi_InitFrameWidgets8()
 {
    hmi_EnableDrawings(0);
    SeuilUn95OnCreate();
@@ -168,13 +183,14 @@ void hmi_InitFrameWidgets7()
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Prev164);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Timer110);
    WidgetAdd(WIDGET_ROOT, (tWidget *)&Valider111);
+   WidgetAdd(WIDGET_ROOT, (tWidget *)&Quit126);
    hmi_InitGlobalContext();
    ConnectWidgetVariable();
    SeuilUn95OnShow();
    hmi_EnableDrawings(1);
 }
 
-void hmi_FreeFrameWidgets7()
+void hmi_FreeFrameWidgets8()
 {
    DisconnectWidgetVariable();
    WidgetRemove((tWidget *)(&CanvasSeuilUn));
@@ -189,6 +205,7 @@ void hmi_FreeFrameWidgets7()
    WidgetRemove((tWidget *)(&Prev164));
    WidgetRemove((tWidget *)(&Timer110));
    WidgetRemove((tWidget *)(&Valider111));
+   WidgetRemove((tWidget *)(&Quit126));
 }
 
 
@@ -284,9 +301,19 @@ void hmi_OnValider111Click(tWidget *pWidget)
   Valider111OnClick(pWidget);
 }
 
+void hmi_OnQuit126Release(tWidget *pWidget)
+{
+}
+
+void hmi_OnQuit126Click(tWidget *pWidget)
+{
+  Quit126OnClick(pWidget);
+}
+
+
 static void ConnectWidgetVariable()
 {
-  if (g_hmi_CurrentFrame != 7) return;
+  if (g_hmi_CurrentFrame != 8) return;
 }
 
 static void DisconnectWidgetVariable()
@@ -297,7 +324,7 @@ void hmi_SeuilUn()
 {
    var_table_init();
    hmi_FreeCurrentFrame();
-   g_hmi_CurrentFrame = 7;
-   hmi_InitFrameWidgets7();
+   g_hmi_CurrentFrame = 8;
+   hmi_InitFrameWidgets8();
 }
 
